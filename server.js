@@ -13,13 +13,18 @@ hbs.registerHelper('getCurYear',()=>{
 app.use((req,res,next)=>{
     
     console.log(`Accessed ${req.url} using ${req.method}`);
-    
-    res.render('maintain.hbs',{
-        pageTitle:'UNDER MAINTENANCE'
-    })
-    
+
     next();
 });
+
+//app.use((req,res,next)=>{
+//    
+//        res.render('maintain.hbs',{
+//        pageTitle:'UNDER MAINTENANCE'
+//    })
+//    
+//    next();
+//});
 
 
 app.use(express.static(__dirname));
