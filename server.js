@@ -18,7 +18,7 @@ app.use((req,res,next)=>{
         pageTitle:'UNDER MAINTENANCE'
     })
     
-//    next();
+    next();
 });
 
 
